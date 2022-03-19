@@ -1,0 +1,38 @@
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+footer {
+  background-color: black;
+}
+.icon-email {
+  background: url(./images/icon-email.svg) no-repeat;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+.icon-location {
+  background: url(/images/icon-location.svg) no-repeat;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+.icon-phone {
+  background: url(/images/icon-phone.svg) no-repeat;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
