@@ -23,16 +23,53 @@ font-family: 'Poppins', sans-serif;
   color: var(--palecyan);
 }
 .font-darkcyan {
-  color: var(--palecyan);
+  color: var(--darkcyan);
 }
 
 /* html semantic elements css */
+body {
+  background: url(/images/bg-hero-mobile.svg) no-repeat;
+  font-size: 1.8em;
+  padding: 1em;
+}
+header {
+  display: flex;
+}
 footer {
   background-color: var(--darkcyan);
 }
 
-/* button css */
+/* logo css */
+.header-logo {
+  transform: scale(0.5) translate(-50%);
+  overflow: visible;
+  /* 50% of original size of the svg */
+  margin: 0;
+}
 
+/* box shadow  */
+.box-shadow {
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+/* button css */
+.header-btn {
+  background-color: white;
+
+  white-space: nowrap;
+  align-self: center;
+  height: 2rem;
+  font-size: 0.5em;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-left: auto;
+  border: none;
+  border-radius: 20px;
+  padding: 0 1.5em;
+  font-family: var(--poppins);
+  /* transform: translate(-30%); */
+}
 /* footer icon css */
 .icon-email {
   background: url(./images/icon-email.svg) no-repeat;
@@ -61,4 +98,10 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px) {
+  .header-logo {
+    transform: scale(1) translate(0%);
+  }
 }
