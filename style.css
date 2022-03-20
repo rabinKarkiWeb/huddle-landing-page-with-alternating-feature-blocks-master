@@ -48,18 +48,29 @@ header {
 
 section {
   margin-top: 5rem;
-  padding: 1em 0;
+  padding: 1em 0 0;
   overflow: hidden;
 }
 
-h1 {
+article {
+  border-radius: 20px;
+  margin: 40px 0;
+  padding: 10px;
+}
+
+h1,
+h2 {
   font-size: 2.3rem;
   font-family: var(--poppins);
   font-weight: 600;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 1.2em;
   font-weight: 400;
   font-family: var(--sans);
@@ -78,8 +89,13 @@ footer {
   padding: 1em;
 }
 
-article article-text p {
-  color: var(--palecyan);
+.article-one {
+  margin-top: 0;
+}
+
+.article-p {
+  color: var(--grayblue);
+  font-size: 1.5rem;
 }
 
 /* logo css */
@@ -90,15 +106,18 @@ article article-text p {
 }
 
 /* image css */
-.heading-image,
-.article-image {
+.heading-image {
   transform: scale(0.3) translate(-112%, -100%);
+  height: 300px;
+}
+.article-image {
+  transform: scale(0.25) translate(-112%, -100%);
   height: 300px;
 }
 
 /* button css */
 .header-btn {
-  background-color: white;
+  background-color: var(--palecyan);
 
   white-space: nowrap;
   align-self: center;
@@ -117,7 +136,7 @@ article article-text p {
   background-color: var(--pink);
   font-family: var(--poppins);
   font-size: 1.2rem;
-  color: white;
+  color: var(--palecyan);
   padding: 1rem 4.5rem;
   border: none;
   border-radius: 25px;
